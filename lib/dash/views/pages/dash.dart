@@ -17,6 +17,9 @@ class DashApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dash',
+      theme: ThemeData(
+        fontFamily: 'Inter',
+      ),
       home: const DashboardPage(),
     );
   }

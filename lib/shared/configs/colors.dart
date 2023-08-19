@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 class DashColors {
   static const Color grey = Color(0xFF363640);
   static const Color grey2 = Color(0xFF2F2F39);
+  static const Color grey3 = Color(0xFF777781);
   static const Color dark = Color(0xFF17161C);
   static const Color dark2 = Color(0xFF201F25);
   static const Color green = Color(0xFF2CBE6B);
