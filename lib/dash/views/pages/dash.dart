@@ -8,11 +8,16 @@
 
 import 'package:flutter/material.dart';
 
+import 'dashboard.dart';
+
 class DashApp extends StatelessWidget {
   const DashApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Dash',
+      home: const DashboardPage(),
+    );
   }
 }
