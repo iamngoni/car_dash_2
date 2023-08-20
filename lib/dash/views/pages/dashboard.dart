@@ -15,6 +15,7 @@ import '../widgets/car_controls_widget.dart';
 import '../widgets/dash_bottom_navigation_bar.dart';
 import '../widgets/map_widget.dart';
 import '../widgets/spotify_widget.dart';
+import '../widgets/top_bar_widget.dart';
 import '../widgets/weather_widget.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -33,33 +34,43 @@ class DashboardPage extends StatelessWidget {
               horizontal: sx(10),
               vertical: sy(15),
             ),
-            child: Row(
+            child: Column(
               children: [
-                const CarControlsWidget(),
+                const TopBarWidget(),
                 SizedBox(
-                  width: sx(10),
+                  height: sy(20),
                 ),
                 Expanded(
-                  child: Column(
+                  child: Row(
                     children: [
-                      const Expanded(
-                        child: MapWidget(),
-                      ),
+                      const CarControlsWidget(),
                       SizedBox(
-                        height: sy(13),
+                        width: sx(10),
                       ),
-                      Row(
-                        children: [
-                          const Expanded(
-                            child: SpotifyWidget(),
-                          ),
-                          SizedBox(
-                            width: sx(10),
-                          ),
-                          const Expanded(
-                            child: WeatherWidget(),
-                          ),
-                        ],
+                      Expanded(
+                        child: Column(
+                          children: [
+                            const Expanded(
+                              child: MapWidget(),
+                            ),
+                            SizedBox(
+                              height: sy(13),
+                            ),
+                            Row(
+                              children: [
+                                const Expanded(
+                                  child: SpotifyWidget(),
+                                ),
+                                SizedBox(
+                                  width: sx(10),
+                                ),
+                                const Expanded(
+                                  child: WeatherWidget(),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
