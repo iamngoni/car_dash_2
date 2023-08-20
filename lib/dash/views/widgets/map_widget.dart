@@ -237,12 +237,170 @@ class MapWidget extends StatelessWidget {
                           ),
                           Expanded(
                             child: Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: sx(10),
+                                vertical: sy(10),
+                              ),
                               decoration: BoxDecoration(
                                 color: DashColors.greyOverlay,
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
-                                children: [],
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        'Nelson Mandela',
+                                        style: TextStyle(
+                                          color: DashColors.white,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: sy(8),
+                                        ),
+                                      ),
+                                      Text(
+                                        '17:15',
+                                        style: TextStyle(
+                                          color: DashColors.white,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: sy(8),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        'Square',
+                                        style: TextStyle(
+                                          color:
+                                              DashColors.white.withOpacity(0.8),
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: sy(7),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Estimated Arrival',
+                                        style: TextStyle(
+                                          color:
+                                              DashColors.white.withOpacity(0.8),
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: sy(7),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.end,
+                                        children: [
+                                          Text(
+                                            '5.1 ',
+                                            style: TextStyle(
+                                              color: DashColors.white,
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: sy(11),
+                                            ),
+                                          ),
+                                          Text(
+                                            'km',
+                                            style: TextStyle(
+                                              color: DashColors.white,
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: sy(7),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        width: sx(5),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          height: sy(3),
+                                          width: context.width,
+                                          decoration: BoxDecoration(
+                                            color: DashColors.divider,
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              Container(
+                                                width: sx(30),
+                                                height: sy(3),
+                                                decoration: BoxDecoration(
+                                                  color: DashColors.divider,
+                                                  borderRadius:
+                                                      BorderRadius.circular(15),
+                                                ),
+                                              ),
+                                              Container(
+                                                width: sx(25),
+                                                height: sy(3),
+                                                color: DashColors.blue,
+                                              ),
+                                              Container(
+                                                width: sx(5),
+                                                height: sy(3),
+                                                color: DashColors.yellow,
+                                              ),
+                                              Container(
+                                                width: sx(3),
+                                                height: sy(3),
+                                                color: DashColors.red,
+                                              ),
+                                              Expanded(
+                                                child: Container(
+                                                  width: sx(3),
+                                                  height: sy(3),
+                                                  decoration: BoxDecoration(
+                                                    color: DashColors.blue,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            15),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: sx(5),
+                                      ),
+                                      Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.end,
+                                        children: [
+                                          Text(
+                                            '1 ',
+                                            style: TextStyle(
+                                              color: DashColors.white,
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: sy(11),
+                                            ),
+                                          ),
+                                          Text(
+                                            'hr',
+                                            style: TextStyle(
+                                              color: DashColors.white,
+                                              fontWeight: FontWeight.w400,
+                                              fontSize: sy(7),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ),

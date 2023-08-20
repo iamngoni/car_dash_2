@@ -25,13 +25,13 @@ class DashBottomNavigationBar extends StatelessWidget {
           color: DashColors.dark2,
           child: SizedBox(
             width: context.width,
-            height: sy(90),
+            height: sy(70),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: sy(60),
-                  width: sy(60),
+                  height: sy(50),
+                  width: sy(50),
                   decoration: BoxDecoration(
                     color: DashColors.blue.withOpacity(0.2),
                     border: Border.all(color: DashColors.blue.withOpacity(0.3)),
@@ -49,8 +49,8 @@ class DashBottomNavigationBar extends StatelessWidget {
                   width: sx(30),
                 ),
                 Container(
-                  height: sy(60),
-                  width: sy(60),
+                  height: sy(50),
+                  width: sy(50),
                   decoration: BoxDecoration(
                     color: DashColors.grey2,
                     border:
@@ -69,8 +69,8 @@ class DashBottomNavigationBar extends StatelessWidget {
                   width: sx(30),
                 ),
                 Container(
-                  height: sy(60),
-                  width: sy(60),
+                  height: sy(50),
+                  width: sy(50),
                   decoration: BoxDecoration(
                     color: DashColors.grey2,
                     border:
@@ -89,8 +89,8 @@ class DashBottomNavigationBar extends StatelessWidget {
                   width: sx(30),
                 ),
                 Container(
-                  height: sy(60),
-                  width: sy(60),
+                  height: sy(50),
+                  width: sy(50),
                   decoration: BoxDecoration(
                     color: DashColors.grey2,
                     border:
