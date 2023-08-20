@@ -6,13 +6,16 @@
 //  Copyright (c) 2023 ModestNerds, Co
 //
 
+import 'package:car_dash_2/dash/views/widgets/speed_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:handy_extensions/handy_extensions.dart';
 import 'package:relative_scale/relative_scale.dart';
 
 import '../../../shared/configs/colors.dart';
+import 'car_control_widget.dart';
 import 'dash_stat_widget.dart';
+import 'gear_widget.dart';
 
 class CarControlsWidget extends StatelessWidget {
   const CarControlsWidget({
@@ -123,6 +126,80 @@ class CarControlsWidget extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: sy(20),
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    const SpeedWidget(),
+                    SizedBox(
+                      width: sx(5),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Status',
+                            style: TextStyle(
+                              color: DashColors.white,
+                              fontWeight: FontWeight.w400,
+                              fontSize: sy(9),
+                            ),
+                          ),
+                          Expanded(
+                            child: GridView.count(
+                              crossAxisCount: 4,
+                              children: const [
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-handbrake.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-abs.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-low-beam.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-high-beam.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-belt.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-battery.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-wiper.png',
+                                ),
+                                CarControlWidget(
+                                  asset: 'assets/icons/car-temp.png',
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: sx(5),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: sy(20),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: sx(10),
+                ),
+                child: const GearWidget(),
+              ),
+              SizedBox(
+                height: sy(20),
               ),
             ],
           ),
